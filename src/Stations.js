@@ -7,13 +7,12 @@ class Stations extends Component {
   };
 
   componentDidMount() {
-    fetch('http://api.citybik.es/v2/networks/bicincitta-siena')
+    fetch('https://api.citybik.es/v2/networks/bicincitta-siena')
       .then((res) => res.json())
       .then((data) => this.setState({ network: data.network }));
   }
 
   render() {
-    console.log('this.state: ', this.state);
     return (
       <div>
         <h1>{this.state.network.name}</h1>

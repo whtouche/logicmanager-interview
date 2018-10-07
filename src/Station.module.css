@@ -1,0 +1,36 @@
+.station {
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 0 auto 5vh;
+  border-radius: 5px;
+}
+
+.stationHeader {
+  padding: 1rem;
+}
+
+.stationBody {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.topRow {
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stationFooter {
+  color: lightgray;
+  padding: 0.5rem;
+}

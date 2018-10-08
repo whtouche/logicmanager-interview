@@ -13,8 +13,16 @@ const Station = (props) => {
           <div>{props.station.empty_slots}</div>
         </div>
         <div className={styles.bottomRow}>
-          <div>{'Free Bikes'.toLocaleUpperCase()}</div>
-          <div>{'Empty Slots'.toLocaleUpperCase()}</div>{' '}
+          <div>
+            {props.station.free_bikes === 1
+              ? 'Free Bike'.toLocaleUpperCase()
+              : 'Free Bikes'.toLocaleUpperCase()}
+          </div>
+          <div>
+            {props.station.empty_slots === 1
+              ? 'Empty Slot'.toLocaleUpperCase()
+              : 'Empty Slots'.toLocaleUpperCase()}
+          </div>{' '}
         </div>
       </div>
       <div className={styles.stationFooter}>{props.station.timestamp}</div>
